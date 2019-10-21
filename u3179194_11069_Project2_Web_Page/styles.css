@@ -1,0 +1,211 @@
+body {
+    font-family: 'Roboto', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f2825b+0,e55b2b+50,f07146+100;Red+3D+%232 */
+    background: rgb(242, 130, 91);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(242, 130, 91, .1) 0%, rgba(229, 91, 43, .1) 50%, rgba(240, 113, 70, .1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(242, 130, 91, .1) 0%, rgba(229, 91, 43, .1) 50%, rgba(240, 113, 70, .1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(242, 130, 91, .1) 0%, rgba(229, 91, 43, .1) 50%, rgba(240, 113, 70, .1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f2825b', endColorstr='#f07146', GradientType=0);
+    /* IE6-9 */
+}
+
+main {
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-auto-rows: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    color: #333131;
+    font-size: 80px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+    margin: 10px 0;
+}
+
+h2 {
+    color: #666666;
+    font-variant: small-caps;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+#yearlyHighs, #allTimeHigh, #bitcoinDominance, #bitcoinHashrate, #yearlyLows, #bitcoin_300ma {
+    border: 2px solid rgb(202, 126, 12);
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.title {
+    margin-left: 150px;
+}
+
+
+/* D3 charts styles */
+
+.x-axis path, .y-axis path, .x-axis line, .y-axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.x-axis text, .y-axis text {
+    font-family: sans-serif;
+    font-size: 10px;
+}
+
+.axis-title {
+    font-size: 16px;
+    color: #666666;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.yearlyHighs_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.yearlyHighs_header > p {
+    margin-bottom: 100px;
+}
+
+.yearlyHighs_header > h3 {
+    font-size: 1.2em;
+}
+
+p.allTimeHigh {
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+div.tooltip {
+    position: absolute;
+    max-width: 200px;
+    height: auto;
+    padding: 5px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    /* ensure tooltip is not the target of pointer events */
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.options {
+    margin: 0px auto 80px;
+}
+
+
+/* Bitcoin year high price chart styles */
+
+.bitcoinYearlyHigh {
+    font-weight: normal;
+    align-self: center;
+}
+
+#yearlyHighs svg {
+    display: block;
+    transform: scale(1.1);
+}
+
+#logo {
+    height: 50px;
+}
+
+.navbar-brand {
+    height: 60px;
+    padding: 5px 0px;
+}
+
+.axis {
+    font: 10px sans-serif;
+}
+
+.axis path, .axis line {
+    fill: none;
+    stroke: #D4D8DA;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+}
+
+.line {
+    fill: none;
+    stroke-width: 2px;
+}
+
+.overlay {
+    fill: none;
+    pointer-events: all;
+}
+
+.focus circle {
+    fill: #F1F3F3;
+    stroke: #777;
+    stroke-width: 3px;
+}
+
+.hover-line {
+    stroke: #777;
+    stroke-width: 2px;
+    stroke-dasharray: 3, 3;
+}
+
+#selections .col-md-4 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.line {
+    fill: none;
+    stroke-width: 2px;
+    /* stroke: #008fd5'; */
+}
+
+
+/* Matplotlib styles */
+
+#bitcoinDominance svg {
+    transform: scale(0.9);
+}
+
+#bitcoinHashrate svg {
+    transform: scale(0.9)
+}
+
+#bitcoin_300ma svg {
+    height: 460px;
+    transform: scale(0.9)
+}
+
+#yearlyLows svg {
+    height: 420px;
+    transform: scale(0.9)
+}

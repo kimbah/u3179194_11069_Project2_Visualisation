@@ -1,0 +1,112 @@
+{
+  "contents": [
+    {
+      "token": "Bitcoin",
+      "ticker": "BTC",
+      "closePrice": [
+        {
+          "month": 20170720,
+          "price": 2269
+        },
+        {
+          "month": 20170820,
+          "price": 4189
+        },
+        {
+          "month": 20170920,
+          "price": 3916
+        },
+        {
+          "month": 20171020,
+          "price": 5708
+        },
+        {
+          "month": 20171120,
+          "price": 8039
+        },
+        {
+          "month": 20171220,
+          "price": 19118
+        },
+        {
+          "month": 20180120,
+          "price": 11656
+        },
+        {
+          "month": 20180220,
+          "price": 11231
+        },
+        {
+          "month": 20180320,
+          "price": 8619
+        },
+        {
+          "month": 20180420,
+          "price": 8286
+        },
+        {
+          "month": 20180520,
+          "price": 8246
+        },
+        {
+          "month": 20180620,
+          "price": 6770
+        }
+      ]
+    },
+    {
+      "token": "Ethereum",
+      "ticker": "ETH",
+      "closePrice": [
+        {
+          "month": 20170720,
+          "price": 226
+        },
+        {
+          "month": 20170820,
+          "price": 298
+        },
+        {
+          "month": 20170920,
+          "price": 283
+        },
+        {
+          "month": 20171020,
+          "price": 303
+        },
+        {
+          "month": 20171120,
+          "price": 367
+        },
+        {
+          "month": 20171220,
+          "price": 799
+        },
+        {
+          "month": 20180120,
+          "price": 1150
+        },
+        {
+          "month": 20180220,
+          "price": 885
+        },
+        {
+          "month": 20180320,
+          "price": 557
+        },
+        {
+          "month": 20180420,
+          "price": 617
+        },
+        {
+          "month": 20180520,
+          "price": 715
+        },
+        {
+          "month": 20180620,
+          "price": 536
+        }
+      ]
+    }
+  ]
+}
